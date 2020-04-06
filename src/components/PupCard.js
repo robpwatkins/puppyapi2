@@ -1,20 +1,19 @@
 import React from 'react';
 import Home from '@material-ui/icons';
 import { Card, CardMedia, CardContent, CardActionArea, Typography } from '@material-ui/core';
-import Img from '../img/IMG_0180.JPG';
 
-function PupCard() {
+function PupCard(props) {
   return (
     <Card>
       <CardActionArea>
         <CardMedia 
           component="img"
-          image={Img}>
+          image={props.pup}>
         </CardMedia>
       </CardActionArea>
-      <CardContent>
-        <Typography>
-          Pupper
+      <CardContent style={{padding: "10px"}}>
+        <Typography variant="subtitle1">
+          {props.name}
         </Typography>
       </CardContent>
     </Card>
