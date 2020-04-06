@@ -11,6 +11,7 @@ function Content() {
   return (
     <Grid 
       container 
+      justify="center"
       direction="row" 
       wrap 
       spacing={2}
