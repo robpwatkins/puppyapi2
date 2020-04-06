@@ -8,7 +8,7 @@ function Content() {
     <Card>
       <CardMedia 
         image={Img}
-        style={{height: "450px", minWidth: "500px"}}>
+        style={{height: "650px", minWidth: "500px"}}>
       </CardMedia>
       <CardContent>
         <Typography>
