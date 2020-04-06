@@ -9,18 +9,54 @@ import Minnie from '../img/Minnie.jpg';
 
 function Content() {
   return (
-    <Grid container>
-      <Grid container item xs={8} sm={4}>
-        <PupCard pup={Bill} name="Winston"/>
-        <PupCard pup={Brandy} name="Brandy"/>
+    <Grid 
+      container 
+      direction="row" 
+      wrap 
+      spacing={2}
+      style={{padding: "16px"}}>
+      <Grid 
+        container 
+        item 
+        direction="column" 
+        spacing={2}
+        xs={8} 
+        sm={4}>
+        <Grid item>
+          <PupCard pup={Bill} name="Winston"/>
+        </Grid>
+        <Grid item>
+          <PupCard pup={Brandy} name="Brandy"/>
+        </Grid>
       </Grid>
-      <Grid container item xs={8} sm={4}>
-        <PupCard pup={Lady} name="Lady"/>
-        <PupCard pup={Blondie} name="Blondie"/>
+      <Grid 
+        container 
+        direction="column" 
+        spacing={2}
+        wrap 
+        item 
+        xs={8} 
+        sm={4}>
+        <Grid item>
+          <PupCard pup={Lady} name="Lady"/>
+        </Grid>
+        <Grid item>
+          <PupCard pup={Blondie} name="Blondie"/>
+        </Grid>
       </Grid>
-      <Grid container item xs={8} sm={4}>
-        <PupCard pup={Minnie} name="Minnie"/>
-        <PupCard pup={Bill} name="Winston"/>
+      <Grid 
+        container 
+        direction="column" 
+        spacing={2}
+        wrap item 
+        xs={8} 
+        sm={4}>
+        <Grid item>
+          <PupCard pup={Minnie} name="Minnie"/>
+        </Grid>
+        <Grid item>
+          <PupCard pup={Brandy} name="Brandy"/>
+        </Grid>
       </Grid>
     </Grid>
     // <Grid 
