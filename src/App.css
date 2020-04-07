@@ -8,10 +8,10 @@
   color: black;
 }
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   padding: 8px 0px 8px 4px;
 }
 
@@ -59,4 +59,4 @@ h6 {
     flex: 100%;
     max-width: 100%;
   }
-}
+} */
