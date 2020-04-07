@@ -6,16 +6,19 @@ import Brandy from '../img/Brandy.jpg';
 import Lady from '../img/Lady.jpg';
 import Blondie from '../img/Blondie.jpg';
 import Minnie from '../img/Minnie.jpg';
+import Sharky from '../img/Sharky.png';
 
 function Content() {
   return (
     <Grid 
       container 
-      justify="center"
-      direction="row" 
-      wrap 
-      spacing={2}
-      style={{padding: "16px"}}>
+      // justify="center"
+      direction="row"
+      // wrap 
+      // spacing={2}
+      justify="space-evenly"
+      style={{paddingTop: "16px"}}
+      >
       <Grid 
         container 
         item 
@@ -39,7 +42,7 @@ function Content() {
         xs={8} 
         sm={4}>
         <Grid item>
-          <PupCard pup={Lady} name="Lady"/>
+          <PupCard pup={Minnie} name="Minnie"/>
         </Grid>
         <Grid item>
           <PupCard pup={Blondie} name="Blondie"/>
@@ -49,14 +52,15 @@ function Content() {
         container 
         direction="column" 
         spacing={2}
-        wrap item 
+        wrap 
+        item 
         xs={8} 
         sm={4}>
         <Grid item>
-          <PupCard pup={Minnie} name="Minnie"/>
+          <PupCard pup={Lady} name="Lady"/>
         </Grid>
         <Grid item>
-          <PupCard pup={Brandy} name="Brandy"/>
+          <PupCard pup={Sharky} name="Sharky"/>
         </Grid>
       </Grid>
     </Grid>
