@@ -5,5 +5,58 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  padding: 8px 0px 8px 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.puppyBox {
+  padding-top: 4px;
+}
+
+.column img {
+  width: 100%;
+}
+
+h6 {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    justify-content: space-evenly;
+    padding: 12px 4px 8px 4px;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 48%;
+    margin: 0;
+  }
+
+  .column1 {
+    padding-right: 4px;
+  }
+
+  .puppyBox {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
