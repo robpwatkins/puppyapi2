@@ -14,7 +14,7 @@ function Content() {
       container 
       // justify="center"
       direction="row"
-      // wrap 
+      wrap 
       // spacing={2}
       justify="space-evenly"
       style={{paddingTop: "16px"}}
@@ -25,7 +25,8 @@ function Content() {
         direction="column" 
         spacing={2}
         xs={8} 
-        sm={4}>
+        sm={6}
+        md={4}>
         <Grid item>
           <PupCard pup={Bill} name="Winston"/>
         </Grid>
@@ -40,7 +41,8 @@ function Content() {
         wrap 
         item 
         xs={8} 
-        sm={4}>
+        sm={6}
+        md={4}>
         <Grid item>
           <PupCard pup={Minnie} name="Minnie"/>
         </Grid>
@@ -55,7 +57,8 @@ function Content() {
         wrap 
         item 
         xs={8} 
-        sm={4}>
+        sm={6}
+        md={4}>
         <Grid item>
           <PupCard pup={Lady} name="Lady"/>
         </Grid>
@@ -64,6 +67,9 @@ function Content() {
         </Grid>
       </Grid>
     </Grid>
+
+
+
     // <Grid 
     //   container justify="center" 
     //   spacing={2}
