@@ -4,7 +4,7 @@ import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 
 function PupCard(props) {
   return (
-    <Card>
+    <Card className="pupCard">
       <CardMedia 
         component="img"
         image={props.pup}>
