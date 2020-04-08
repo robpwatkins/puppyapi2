@@ -6,6 +6,7 @@ import Blondie from '../img/Blondie-thumb.jpg';
 import Brandy from '../img/Brandy-thumb.jpg';
 import Sharky from '../img/Sharky-thumb.png';
 import Max from '../img/Max-thumb.jpg';
+import Heidi from '../img/Heidi-thumb.jpg';
 import PupCard from './PupCard';
 import { Grid } from '@material-ui/core';
 
@@ -19,6 +20,7 @@ function Thumbs() {
       <PupCard pup={Brandy} name="Brandy" />
       <PupCard pup={Max} name="Max" />
       <PupCard pup={Sharky} name="Sharky" />
+      <PupCard pup={Heidi} name="Heidi" />
       <PupCard pup={Winston} name="Winston" />
       <PupCard pup={Lady} name="Lady" />
       <PupCard pup={Minnie} name="Minnie" />
