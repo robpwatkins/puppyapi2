@@ -19,32 +19,28 @@ function Thumbs() {
       <PupCard pup={Brandy} name="Brandy" />
       <PupCard pup={Max} name="Max" />
       <PupCard pup={Sharky} name="Sharky" />
+      <PupCard pup={Winston} name="Winston" />
+      <PupCard pup={Lady} name="Lady" />
+      <PupCard pup={Minnie} name="Minnie" />
+      <PupCard pup={Blondie} name="Blondie" />
+      <PupCard pup={Brandy} name="Brandy" />
+      <PupCard pup={Max} name="Max" />
+      <PupCard pup={Sharky} name="Sharky" />
+      <PupCard pup={Winston} name="Winston" />
+      <PupCard pup={Lady} name="Lady" />
+      <PupCard pup={Minnie} name="Minnie" />
+      <PupCard pup={Blondie} name="Blondie" />
+      <PupCard pup={Brandy} name="Brandy" />
+      <PupCard pup={Max} name="Max" />
+      <PupCard pup={Sharky} name="Sharky" />
+      <PupCard pup={Winston} name="Winston" />
+      <PupCard pup={Lady} name="Lady" />
+      <PupCard pup={Minnie} name="Minnie" />
+      <PupCard pup={Blondie} name="Blondie" />
+      <PupCard pup={Brandy} name="Brandy" />
+      <PupCard pup={Max} name="Max" />
+      <PupCard pup={Sharky} name="Sharky" />
     </div>
-
-    // </div>
-    // <Grid container spacing={2} style={{padding: "16px"}}>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Winston} name="Winston" />
-    //   </Grid>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Lady} name="Lady" />
-    //   </Grid>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Minnie} name="Minnie" />
-    //   </Grid>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Blondie} name="Blondie" />
-    //   </Grid>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Brandy} name="Brandy" />
-    //   </Grid>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Max} name="Max" />
-    //   </Grid>
-    //   <Grid item xs={12} sm={6} md={4} lg={3}>
-    //     <PupCard pup={Sharky} name="Sharky" />
-    //   </Grid>
-    // </Grid>
   )
 }
 
