@@ -1,11 +1,3 @@
-/* * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
- */
 .App {
   text-align: center;
   display: flex;
@@ -15,29 +7,3 @@ body {
   font-size: calc(10px + 2vmin);
   color: black;
 }
-
-/* .thumbs {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 16px 0 16px 16px;
-}
-
-.pupCard {
-  flex: 22%;
-  max-width: 25%;
-  margin: 0 16px 16px 0;
-}
-
-@media (max-width: 800px) {
-  .pupCard {
-    flex: 47%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .pupCard {
-    flex: 100%;
-    max-width: 100%;
-  }
-} */

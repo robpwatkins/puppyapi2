@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from '@material-ui/icons';
 import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
 
 function PupCard(props) {
