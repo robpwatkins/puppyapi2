@@ -25,7 +25,7 @@ body {
 .pupCard {
   flex: 22%;
   max-width: 25%;
-  margin: 0 16px 0 0;
+  margin: 0 16px 16px 0;
 }
 
 @media (max-width: 800px) {
