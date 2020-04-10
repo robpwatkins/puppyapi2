@@ -4,16 +4,15 @@ import { Home } from '@material-ui/icons';
 
 function Header() {
   return (
-    <AppBar position="static" style={{background: "#5f6caf"}}>
-      <Toolbar>
-        <Home />
-        <Typography 
-          variant="h5" 
-          style={{paddingLeft: '15px'}}>
-          Puppy API
-        </Typography>
-      </Toolbar>
-    </AppBar>
+    <nav>
+      <Home style={{paddingLeft: "20px"}}/>
+      <Typography 
+        variant="h5" 
+        style={{paddingLeft: '15px'}}>
+        Puppy API
+      </Typography>
+    </nav>
+
   )
 }
 
