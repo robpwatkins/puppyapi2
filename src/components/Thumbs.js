@@ -13,11 +13,7 @@ import { Grid } from '@material-ui/core';
 
 function Thumbs() {
   return (
-<<<<<<< HEAD
     <Grid container direction="row" wrap spacing={2} style={{padding: "16px", background: ""}}>
-=======
-    <Grid container direction="row" spacing={2} style={{padding: "16px", background: "#edf7fa"}}>
->>>>>>> 8fec92e156675d6b7fe8aadc10f08e090fce7712
       <Grid container item xs={4} sm={3} md={2} lg={1}>
         <PupCard pup={Winston} name="Winston" />
       </Grid>
