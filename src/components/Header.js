@@ -1,13 +1,15 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Fab } from '@material-ui/core';
 import { Home } from '@material-ui/icons';
 
 function Header() {
   return (
     <nav>
-      <Home style={{paddingLeft: "20px"}}/>
+      <Fab size="small" style={{background: "white", color: "#1976d2"}}>
+        <Home />
+      </Fab>
       <Typography 
-        variant="h5" 
+        variant="h4" 
         style={{paddingLeft: '15px'}}>
         Puppy API
       </Typography>
