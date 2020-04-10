@@ -4,7 +4,7 @@ import { Home } from '@material-ui/icons';
 
 function Header() {
   return (
-    <AppBar position="static" style={{background: "#5f6caf"}}>
+    <AppBar className="header" position="static" style={{background: "#5f6caf"}}>
       <Toolbar>
         <Home />
         <Typography 
