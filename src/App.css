@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background: #bdbdbd69;
-  font-size: 23px;
+  font-size: 21px;
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 
 .icon-title {
   display: flex;
-  width: 225px;
+  width: 210px;
   height: 90%;
   align-items: center;
   justify-content: space-between;
