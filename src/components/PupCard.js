@@ -8,7 +8,7 @@ function PupCard(props) {
         component="img"
         image={props.pup}>
       </CardMedia>
-      <CardContent style={{padding: "5px"}}>
+      <CardContent style={{padding: "5px", color: "", textShadow: "", background: ""}}>
         <Typography variant="subtitle1">
           {props.name}
         </Typography>
