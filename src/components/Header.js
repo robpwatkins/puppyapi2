@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Fab } from '@material-ui/core';
-import { Pets } from '@material-ui/icons';
+import { Pets, Dehaze } from '@material-ui/icons';
 
 function Header() {
   return (
@@ -14,6 +14,9 @@ function Header() {
           <h2>Puppy API</h2>
         </div>
         <nav>
+          <div className="burger">
+            <Dehaze />
+          </div>
           <ul>
             <li className="home">Home</li>
             <li>Documentation</li>

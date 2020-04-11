@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background: #bdbdbd69;
-  font-size: 21px;
+  font-size: 20px;
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 
 .icon-title {
   display: flex;
-  width: 210px;
+  width: 200px;
   height: 90%;
   align-items: center;
   justify-content: space-between;
@@ -36,6 +36,10 @@ h2 {
   margin: 0;
 }
 
+.burger {
+  display: none;
+}
+
 .header-box {
   display: flex;
   width: 100%;
@@ -44,18 +48,15 @@ h2 {
   justify-content: space-between;
 }
 
-.thumbs {
-  padding: 16px;
-}
-
 ul {
   display: flex;
   height: 100%;
-  width: 450px;
+  width: 385px;
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
-  /* font-size: 21px; */
+  padding: 0;
+  font-size: 18px;
   list-style-type: none;
 }
 
@@ -64,4 +65,22 @@ ul {
   height: 58px;
   line-height: 61px;
   border-bottom: 3px solid white;
+}
+
+.thumbs {
+  padding: 16px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding-right: 15px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  ul {
+    display: none;
+  }
 }
