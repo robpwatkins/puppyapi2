@@ -9,6 +9,7 @@ import Max from '../img/Max-thumb.jpg';
 import Heidi from '../img/Heidi-thumb.jpg';
 import Libby from '../img/Libby-thumb.jpg';
 import Narcissa from '../img/Narcissa-thumb.jpg';
+import Claude from '../img/Claude.jpg';
 import PupCard from './PupCard';
 import { Grid } from '@material-ui/core';
 
@@ -46,6 +47,9 @@ function Thumbs() {
         <PupCard pup={Narcissa} name="Narcissa" />
       </Grid>
       <Grid container item xs={4} sm={3} md={2} lg={1}>
+        <PupCard pup={Claude} name="Claude" />
+      </Grid>
+      <Grid container item xs={4} sm={3} md={2} lg={1}>
         <PupCard pup={Winston} name="Winston" />
       </Grid>
       <Grid container item xs={4} sm={3} md={2} lg={1}>
@@ -74,6 +78,9 @@ function Thumbs() {
       </Grid>
       <Grid container item xs={4} sm={3} md={2} lg={1}>
         <PupCard pup={Narcissa} name="Narcissa" />
+      </Grid>
+      <Grid container item xs={4} sm={3} md={2} lg={1}>
+        <PupCard pup={Claude} name="Claude" />
       </Grid>
     </Grid>
   )
