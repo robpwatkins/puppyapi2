@@ -67,10 +67,6 @@ ul {
   border-bottom: 3px solid white;
 }
 
-.thumbs {
-  padding: 16px;
-}
-
 @media (max-width: 600px) {
   nav {
     padding-right: 15px;
