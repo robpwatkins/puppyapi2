@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Input, Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const divStyle = {
   width: "100%", 
@@ -9,6 +10,15 @@ const divStyle = {
 
 const buttonStyle = {
   marginTop: "15px"
+}
+
+const h4Style = {
+  marginBottom: "0px"
+}
+
+const linkStyle = {
+  textDecoration: "underline",
+  lineHeight: "0px"
 }
 
 class Login extends Component {
@@ -60,6 +70,8 @@ class Login extends Component {
             >login
           </Button>
         </form>
+        <h4 style={h4Style}>Don't have an account?</h4>
+        <Link to="" style={linkStyle}>Join the fun!</Link>
       </div>
     )
   }
