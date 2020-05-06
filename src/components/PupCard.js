@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardMedia, CardContent, Typography } from '@material-ui/core';
-import { FavoriteBorder } from '@material-ui/icons';
+import { Favorite, FavoriteBorder } from '@material-ui/icons';
 import { checkAuth } from '../checkAuth';
 
 const nameStyle = {
@@ -13,44 +13,48 @@ const divStyle = {
   justifyContent: "center"
 }
 
-class PupCard extends React.Component {
-  state = {
-    display: 'none'
-  }
+const PupCard = (props) => {
+  const [isShown, setIsShown] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
-handleMouseEnter = () => {
-  this.setState({ display: "block" });
-}
-
-handleMouseLeave = () => {
-  this.setState({ display: "none" });
-}
-
-  render() {
+const handleHoverandClick = () => {
+  if (isClicked) {
     return (
-      <Card 
-        className="pupCard" 
-        raised 
-        onMouseEnter={this.handleMouseEnter} 
-        onMouseLeave={this.handleMouseLeave}
-        >
-        <CardMedia 
-          component="img"
-          image={this.props.pup}>
-        </CardMedia>
-        <CardContent style={{padding: "5px"}}>
-          <div style={divStyle}>
-            {checkAuth() &&
-              <FavoriteBorder style={{display: `${this.state.display}`}}/>
-            }
-            <Typography variant="subtitle1" style={nameStyle}>
-              {this.props.name}
-            </Typography>
-          </div>
-        </CardContent>
-      </Card>
+      <Favorite color="secondary"/>
     )
+  } else {
+    if (isShown) {
+      return (
+        <FavoriteBorder />
+      )
+    } else {
+      return null;
+    }
   }
+}
+
+  return (
+    <Card 
+      className="pupCard" 
+      raised
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}
+      onClick={() => setIsClicked(true)}
+      >
+      <CardMedia 
+        component="img"
+        image={props.pup}>
+      </CardMedia>
+      <CardContent style={{padding: "5px"}}>
+        <div style={divStyle}>
+          {checkAuth() && handleHoverandClick()}
+          <Typography variant="subtitle1" style={nameStyle}>
+            {props.name}
+          </Typography>
+        </div>
+      </CardContent>
+    </Card>
+  )
 }
 
 export default PupCard;
