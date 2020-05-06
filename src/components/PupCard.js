@@ -13,6 +13,11 @@ const divStyle = {
   justifyContent: "center"
 }
 
+const iconStyle = {
+  position: "absolute",
+  marginLeft: "-55px"
+}
+
 const PupCard = (props) => {
   const [isShown, setIsShown] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
@@ -20,12 +25,12 @@ const PupCard = (props) => {
 const handleHoverandClick = () => {
   if (isClicked) {
     return (
-      <Favorite color="secondary"/>
+      <Favorite color="secondary" style={iconStyle} />
     )
   } else {
     if (isShown) {
       return (
-        <FavoriteBorder />
+        <FavoriteBorder style={iconStyle} />
       )
     } else {
       return null;
@@ -39,7 +44,7 @@ const handleHoverandClick = () => {
       raised
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
-      onClick={() => setIsClicked(true)}
+      onClick={() => setIsClicked(!isClicked)}
       >
       <CardMedia 
         component="img"
