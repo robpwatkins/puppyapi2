@@ -13,9 +13,14 @@ import Claude from '../img/Claude.jpg';
 import PupCard from './PupCard';
 import { Grid } from '@material-ui/core';
 
+const gridStyle = {
+  width: "100%",
+  padding: "16px 16px 0 16px"
+}
+
 function Thumbs() {
   return (
-    <Grid className="thumbs" container direction="row" wrap spacing={2} style={{padding: "16px"}}>
+    <Grid className="thumbs" container direction="row" spacing={2} style={gridStyle}>
       <Grid container item xs={4} sm={3} md={2} lg={1}>
         <PupCard pup={Winston} name="Winston" />
       </Grid>

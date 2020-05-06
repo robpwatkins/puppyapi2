@@ -1,8 +1,12 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Fab } from '@material-ui/core';
+import { Fab } from '@material-ui/core';
 import { Pets, Dehaze } from '@material-ui/icons';
+import { NavLink } from 'react-router-dom';
+import { checkAuth } from '../checkAuth';
+// import cookie from 'cookie';
 
-function Header() {
+const Header = () => {
+  console.log('Header', document.cookie);
   return (
     <header>
       <div className="top-bar"></div>
@@ -18,9 +22,22 @@ function Header() {
             <Dehaze />
           </div>
           <ul>
-            <li className="home">Pups</li>
-            <li>Login</li>
-            <li>Documentation</li>
+            <NavLink exact to="/" activeStyle={{borderBottom: "3px solid white"}}>
+              <li className="pups">Pups</li>
+            </NavLink>
+            {checkAuth() ? (
+              <li 
+                onClick={() => {
+                  document.cookie = "loggedIn=";
+                  window.location.replace('/');
+                }}
+                >Logout
+              </li>
+            ):(
+              <NavLink to="/login">
+                <li>Login</li>
+              </NavLink>
+              )}
           </ul>
         </nav>
       </div>
