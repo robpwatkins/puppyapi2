@@ -13,6 +13,10 @@ const divStyle = {
   justifyContent: "center"
 }
 
+const cardStyle = {
+  cursor: "pointer"
+} 
+
 const iconStyle = {
   position: "absolute",
   marginLeft: "-55px"
@@ -45,6 +49,7 @@ const handleHoverandClick = () => {
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
       onClick={() => setIsClicked(!isClicked)}
+      style={checkAuth() ? cardStyle : {}}
       >
       <CardMedia 
         component="img"
