@@ -5,6 +5,10 @@ import { NavLink } from 'react-router-dom';
 import { checkAuth } from '../checkAuth';
 // import cookie from 'cookie';
 
+const pointerStyle = {
+  cursor: "pointer"
+}
+
 const Header = () => {
   console.log('Header', document.cookie);
   return (
@@ -25,12 +29,16 @@ const Header = () => {
             <NavLink exact to="/" activeStyle={{borderBottom: "3px solid white"}}>
               <li className="pups">Pups</li>
             </NavLink>
+            {checkAuth() &&
+              <li style={pointerStyle}>Upload</li>
+            }
             {checkAuth() ? (
               <li 
                 onClick={() => {
                   document.cookie = "loggedIn=";
                   window.location.replace('/');
                 }}
+                style={pointerStyle}
                 >Logout
               </li>
             ):(
