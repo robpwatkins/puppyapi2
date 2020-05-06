@@ -13,49 +13,9 @@ import Claude from '../img/Claude.jpg';
 import PupCard from './PupCard';
 import { Grid } from '@material-ui/core';
 
-const gridStyle = {
-  height: "100%",
-  width: "100%",
-  margin: "0",
-  padding: "16px 16px 0 16px"
-}
-
 function Thumbs() {
   return (
-    <Grid container direction="row" wrap spacing={2} style={gridStyle}>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Winston} name="Winston" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Minnie} name="Minnie" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Lady} name="Lady" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Blondie} name="Blondie" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Brandy} name="Brandy" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Sharky} name="Sharky" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Max} name="Max" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Heidi} name="Heidi" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Libby} name="Libby" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Narcissa} name="Narcissa" />
-      </Grid>
-      <Grid container item xs={4} sm={3} md={2} lg={1}>
-        <PupCard pup={Claude} name="Claude" />
-      </Grid>
+    <Grid className="thumbs" container direction="row" wrap spacing={2} style={{padding: "16px"}}>
       <Grid container item xs={4} sm={3} md={2} lg={1}>
         <PupCard pup={Winston} name="Winston" />
       </Grid>

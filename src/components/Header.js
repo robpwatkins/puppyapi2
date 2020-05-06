@@ -18,9 +18,9 @@ function Header() {
             <Dehaze />
           </div>
           <ul>
-            <li className="home">Home</li>
+            <li className="home">Pups</li>
+            <li>Login</li>
             <li>Documentation</li>
-            <li>Contact</li>
           </ul>
         </nav>
       </div>
