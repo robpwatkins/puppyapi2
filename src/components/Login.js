@@ -18,16 +18,16 @@ const inputStyle = {
 }
 
 const buttonStyle = {
-  marginTop: "5px"
+  marginTop: "10px"
 }
 
 const h4Style = {
-  margin: "3`5px 0 10px 0"
+  margin: "35px 0 10px 0"
 }
 
 const linkStyle = {
+  color: "inherit",
   textDecoration: "underline",
-  lineHeight: "0px"
 }
 
 class Login extends Component {
