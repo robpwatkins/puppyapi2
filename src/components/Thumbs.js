@@ -14,7 +14,11 @@ import Claude from '../img/Claude.jpg';
 import PupCard from './PupCard';
 import { Grid } from '@material-ui/core';
 
-const containerStyle = {
+const loggedOutContainerStyle = {
+  paddingTop: "10px"
+}
+
+const loggedInContainerStyle = {
   background: "#bdbdbd69",
   paddingTop: "20px"
 }
@@ -40,7 +44,7 @@ const gridStyle = {
 
 function Thumbs() {
   return (
-    <div style={containerStyle}>
+    <div style={checkAuth() ? loggedInContainerStyle : loggedOutContainerStyle}>
       {checkAuth() && (
         <div style={divStyle}>
         <p>Welcome! Your unique endpoint is puppyapi.com/username</p>

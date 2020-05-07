@@ -5,15 +5,24 @@ import { Link } from 'react-router-dom';
 const divStyle = {
   width: "100%", 
   textAlign: "center", 
-  paddingTop: "45px"
+  paddingTop: "75px"
+}
+
+const formStyle = {
+  width: "100%"
+}
+
+const inputStyle = {
+  width: "21%",
+  marginBottom: "10px"
 }
 
 const buttonStyle = {
-  marginTop: "15px"
+  marginTop: "5px"
 }
 
 const h4Style = {
-  marginBottom: "0px"
+  margin: "3`5px 0 10px 0"
 }
 
 const linkStyle = {
@@ -43,23 +52,27 @@ class Login extends Component {
   render() {
     return (
       <div style={divStyle}>
-        <form action="" onSubmit={this.handleSubmit}>
+        <form action="" onSubmit={this.handleSubmit} style={formStyle}>
           <Input
             required
+            fullwidth
             placeholder="username"
             onChange={this.handleTextChange}
             value={this.state.username}
             name="username"
+            style={inputStyle}
             >
           </Input>
           <br />
           <Input
             required
+            fullwidth
             placeholder="password"
             onChange={this.handleTextChange}
             value={this.state.password}
             name="password"
             type="password"
+            style={inputStyle}
             >
           </Input>
           <br />

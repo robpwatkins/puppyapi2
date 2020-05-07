@@ -31,7 +31,7 @@ const iconTitleStyle = {
 const ulStyle = {
   display: "flex",
   height: "100%",
-  width: "285px",
+  width: "400px",
   justifyContent: "space-evenly",
   alignItems: "center",
   margin: "0",
@@ -54,7 +54,8 @@ const aStyle = {
   height: "58px",
   lineHeight:  "61px",
   textAlign: "center",
-  width: "25%",
+  flex: "1",
+  margin: "0 15px",
   color: "inherit",
   textDecoration: "none",
 }
@@ -82,20 +83,25 @@ const Header = () => {
             <NavLink exact to="/" activeStyle={{borderBottom: "3px solid white"}} style={aStyle}>
               <li className="pups">Pups</li>
             </NavLink>
-            {checkAuth() &&
+            {/* {checkAuth() &&
               <li style={pointerStyle}>Upload</li>
-            }
+            } */}
+            <NavLink to="/documentation" activeStyle={{borderBottom: "3px solid white"}} style={aStyle}>
+              <li>Documentation</li>
+            </NavLink>
             {checkAuth() ? (
-              <li 
-                onClick={() => {
-                  document.cookie = "loggedIn=";
-                  window.location.replace('/');
-                }}
-                style={pointerStyle}
-                >Logout
-              </li>
+              <NavLink to="" style={aStyle}>
+                <li 
+                  onClick={() => {
+                    document.cookie = "loggedIn=";
+                    window.location.replace('/');
+                  }}
+                  style={pointerStyle}
+                  >Logout
+                </li>
+              </NavLink>
             ):(
-              <NavLink to="/login" style={aStyle}>
+              <NavLink to="/login" activeStyle={{borderBottom: "3px solid white"}} style={aStyle}>
                 <li>Login</li>
               </NavLink>
               )}
